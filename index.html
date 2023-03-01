@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="/sandbox.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1e0fc78713.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Validation</h2>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password "
+        oninput="check()"
+      />
+
+      <br />
+      <div id="set">
+        <div id="count">
+          Length:0
+        </div>
+        <i id="see" onclick="see()" class="fa-regular fa-eye"></i>
+      </div>
+
+      <div id="check0">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>Length more than 5</span>
+      </div>
+      <div id="check1">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>Length less than 10</span>
+      </div>
+      <div id="check2">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>Contains numerical character</span>
+      </div>
+      <div id="check3">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>Contains Special Character</span>
+      </div>
+      <div id="check4">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>Should not contain spaces</span>
+      </div>
+    </div>
+  </body>
+</html>
